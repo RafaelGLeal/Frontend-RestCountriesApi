@@ -1,0 +1,37 @@
+.flags{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.flags ul{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 4em;
+    li{
+        box-shadow: $box-shadow;
+        border-radius: $border-radius;
+        .wrapper{
+            padding: 1.5em 1.25em;
+        }
+        .image{
+            width: 100%;
+        }
+        .country{
+            font-weight: $font-weight-b;
+            font-size: 1.5em;
+            margin: 1em 0;
+        }
+        .population, .region, .capital{
+            display: flex;
+            margin: 1em 0;
+            h3{
+                margin-right: 5px;
+            }
+            h4{
+                font-weight: $font-weight-l;
+            }
+        }
+
+    }
+}

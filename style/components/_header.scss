@@ -1,0 +1,15 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 5em;
+    box-shadow: $box-shadow;
+    &-logo{
+        font-weight: $font-weight-b;
+        font-size: 1.5em;
+    }
+    &-toggle{
+        font-weight: $font-weight-m;
+        cursor: pointer;
+    }
+}

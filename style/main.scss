@@ -1,0 +1,47 @@
+@import 'abstracts/__abstracts-dir';
+@import 'base/__base-dir';
+@import 'components/__components-dir';
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-size: 15px;
+    box-sizing: border-box;
+    max-width: 1440px;
+    min-width: 370px;
+    font-family: $font;
+    font-weight: $font-weight-m;
+}
+img{
+    border-top-left-radius: .3em;
+    border-top-right-radius: .3em;
+    max-width: 100%;
+}
+.light-mode{
+    background-color: $light-mode-bg;
+    color: $light-mode-text;
+    .flags li, .navbar, .filter div{
+        background-color: $light-mode-elements;
+        &::before, ul{
+            background-color: $light-mode-elements;
+        }
+    }
+}
+
+.light-mode.dark-mode{
+    background-color: $dark-mode-bg;
+    color: $dark-mode-text;
+    .flags li, .navbar, .filter div{
+        background-color: $dark-mode-elements;
+        &::before, ul{
+            background-color: $dark-mode-elements;
+        }
+    }
+    .search{
+        background-color: $dark-mode-elements;
+        
+    }
+    .search::placeholder{
+        color: $dark-mode-text;
+    }
+}

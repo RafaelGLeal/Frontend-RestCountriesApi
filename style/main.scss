@@ -18,6 +18,7 @@ img{
     max-width: 100%;
 }
 .light-mode{
+    transition: .1s ease-in;
     background-color: $light-mode-bg;
     color: $light-mode-text;
     .flags li, .navbar, .filter div{
@@ -29,6 +30,7 @@ img{
 }
 
 .light-mode.dark-mode{
+    transition: .1s ease-in;
     background-color: $dark-mode-bg;
     color: $dark-mode-text;
     .flags li, .navbar, .filter div{

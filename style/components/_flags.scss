@@ -11,11 +11,9 @@
     li{
         box-shadow: $box-shadow;
         border-radius: $border-radius;
+        display: grid;
         .wrapper{
             padding: 1.5em 1.25em;
-        }
-        .image{
-            width: 100%;
         }
         .country{
             font-weight: $font-weight-b;

@@ -495,11 +495,7 @@ Files inside this folder can contain global styles used in the project.
   margin: 1em 1.5em;
   cursor: pointer;
 }
-.filter-section #filter.active i {
-  transform: rotate(0deg);
-  transition: 0.3s ease;
-}
-.filter-section #filter.active ul {
+.filter-section #filterList.active {
   visibility: visible;
   opacity: 1;
   transform: translate(0);
@@ -521,12 +517,10 @@ Files inside this folder can contain global styles used in the project.
 .flags ul li {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 0.3em;
+  display: grid;
 }
 .flags ul li .wrapper {
   padding: 1.5em 1.25em;
-}
-.flags ul li .image {
-  width: 100%;
 }
 .flags ul li .country {
   font-weight: 800;
@@ -562,6 +556,7 @@ img {
 }
 
 .light-mode {
+  transition: 0.1s ease-in;
   background-color: hsl(0deg, 0%, 98%);
   color: hsl(200deg, 15%, 8%);
 }
@@ -573,6 +568,7 @@ img {
 }
 
 .light-mode.dark-mode {
+  transition: 0.1s ease-in;
   background-color: hsl(207deg, 26%, 17%);
   color: hsl(0deg, 0%, 100%);
 }

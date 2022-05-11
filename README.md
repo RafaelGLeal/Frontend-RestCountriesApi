@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- [Live](https://rockpaperscissorlizardspock.netlify.app/)
+- [Live](https://frontend-rest-countries-api.vercel.app/)
 
 ## My process
 

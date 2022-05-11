@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 4em;
+    padding-bottom: 100px;
     li{
         box-shadow: $box-shadow;
         border-radius: $border-radius;
@@ -31,5 +32,94 @@
             }
         }
 
+    }
+}
+.flag-detail{
+    visibility: hidden;
+}
+.flag-detail.active{
+    visibility: visible;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    margin: 5em auto;
+    justify-content: space-evenly;
+    position: relative;
+    .btn-back{
+        position: absolute;
+        top: -30%;
+        background-color: $white;
+        box-shadow: $box-shadow;
+        border: none;
+        border-radius: $border-radius;
+        padding: .5em 2em;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        i{
+            font-size: 1.5em;
+            margin-right: .5em;
+        }
+    }
+    .image img{
+        width: 500px;
+    }
+    .name{
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        font-weight: $font-weight-b;
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    .wrapper{
+        margin-top: 8em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 40%;
+        div{
+            display: flex;
+        }
+        h3{
+            font-weight: $font-weight-b;
+            margin: .5em 0;
+        }
+        h4{
+            font-weight: $font-weight-l;
+            margin: .5em;
+        }
+    }
+}
+@media screen and(max-width: 1150px) {
+    .flags ul{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .flag-detail.active{
+        grid-template-columns: 1fr;
+    }
+    .name{
+        top:50% !important;
+        left: 0 !important;
+    }
+    .btn-back{
+        top: -10% !important;
+    }
+    .wrapper{
+        height: 100% !important;
+    }
+}
+@media screen and(max-width: 870px) {
+    .flags ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and(max-width: 670px) {
+    .flags ul{
+        display: block;
+        width: min-content;
+        li{
+            margin-bottom: 30px;
+        }
     }
 }
